@@ -142,6 +142,13 @@ p {
     margin: 10px auto;
 }
 
+button {
+    background-color: var(--dark-pink);
+    border: 0;
+    color: var(--background-white);
+    padding: 0 2px;
+}
+
 .bold {
     font-weight: 600;
 }

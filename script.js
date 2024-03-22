@@ -16,3 +16,13 @@ for (let i = 0; i < tabs.length; i++) {
         pages[i].classList.add('currentpage')
     })
 }
+
+let copyButtons = document.querySelectorAll(".text button");
+
+copyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        console.log(button.id)
+        navigator.clipboard.writeText(button.id);
+        alert("je hebt '" + button.id + "' gekopieerd")
+    })
+});

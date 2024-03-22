@@ -124,11 +124,16 @@ footer {
 
 #huur_mij > * {
     width: 95%;
+    max-width: 500px;
+}
+
+
+.text {
     margin: 0 auto;
 }
 
 p {
-    margin: 20px auto !important;
+    margin: 10px auto;
 }
 
 .bold {
@@ -138,6 +143,7 @@ p {
 .photos {
     display: flex;
     line-height: 0;
+    margin: 10px auto;
 }
 
 .photo {
@@ -166,6 +172,8 @@ p {
 }
 
 .website {
+    margin: 0 auto;
+
     text-align: center;
     scroll-snap-align: center;
 

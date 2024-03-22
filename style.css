@@ -181,7 +181,7 @@ button {
 
 /*/ / BROWSER / /*/
 #websites {
-    scroll-snap-type: y proximity;
+    /* scroll-snap-type: y proximity; */
 }
 
 .website {

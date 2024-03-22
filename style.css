@@ -24,8 +24,9 @@ body {
     overflow-y: hidden;
 
     font-family: "Roboto", sans-serif;
+    font-weight: 300;
     color: var(--dark-pink);
-    background-color: var(--dark-pink);
+    background-color: var(--light-pink);
 }
 
 h1 {
@@ -63,6 +64,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-weight: 400;
+
     background-color: var(--light-pink);
     border-bottom: 2px solid var(--dark-pink);
     border-top: 2px solid var(--dark-pink);
@@ -99,6 +103,8 @@ main {
 
 .currentpage {
     display: initial;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -112,6 +118,46 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*/ / HUUR MIJ / /*/
+
+#huur_mij > * {
+    width: 95%;
+    margin: 0 auto;
+}
+
+p {
+    margin: 20px auto !important;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.photos {
+    display: flex;
+    line-height: 0;
+}
+
+.photo {
+    width: 50%;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+#filter1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(119, 76%, 33%, 0.2);
+}
+
+#filter2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(234, 76%, 33%, 0.2);
 }
 
 /*/ / BROWSER / /*/
@@ -130,7 +176,6 @@ footer {
 
     width: 95%;
     max-width: 900px;
-    margin: 0 auto;
     height: 100%;
 }
 

@@ -181,7 +181,7 @@ button {
 
 /*/ / BROWSER / /*/
 #websites {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
 }
 
 .website {
@@ -225,7 +225,7 @@ button {
 
     line-height: 0;
 
-    overscroll-behavior: none;
+    /* overscroll-behavior: none; */
 
     border-top: 0.1px solid var(--dark-pink);
 }

@@ -130,7 +130,7 @@ footer a {
 
 #huur_mij > * {
     width: 95%;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 
@@ -196,7 +196,7 @@ button {
     align-items: start;
 
     width: 95%;
-    max-width: 900px;
+    max-width: 600px;
     height: 100%;
 }
 
@@ -212,8 +212,6 @@ button {
 
 .browser {
     width: 100%;
-
-    background-color: #C65252;
     border: 0.1px solid var(--dark-pink);
 }
 

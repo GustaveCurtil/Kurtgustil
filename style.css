@@ -95,7 +95,7 @@ nav {
 main {
     display: none;
     width: 100%;
-    height: calc(100% - 95px);
+    height: calc(100svh - 95px);
 
     background-color: var(--background-white);
 
@@ -130,7 +130,7 @@ footer a {
 
 .huur_mij {
     width: 95%;
-    height: calc(100%);
+    min-height: calc(100%);
     max-width: 600px;
     margin: 0 auto;
     display: flex;
@@ -139,13 +139,11 @@ footer a {
 }
 
 
-.text {
-    margin: 0 auto;
-    width: 100%;
-}
-
 p {
-    margin: 0px auto;
+    margin: 20px auto;
+    width: 100%;
+    line-height: 20px;
+
 }
 
 button {

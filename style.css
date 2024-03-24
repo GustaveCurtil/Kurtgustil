@@ -9,9 +9,10 @@
 
 :root {
     --dark-pink: #C65252;
-    --light-pink: #FFD2D2;
-    --background-white: #F5F5F5;
+    --light-pink: #ffdbdb;
+    --background-white: #fcfcfc;
 }
+
 
 body {
     width: 100vw;
@@ -126,22 +127,26 @@ footer a {
     text-decoration: none;
 }
 
+footer p {
+    width: auto;
+    font-weight: 400;
+}
+
 /*/ / HUUR MIJ / /*/
 
-.huur_mij {
+.pagewrapper {
     width: 95%;
     min-height: calc(100%);
-    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;;
+
 }
 
 
 p {
     margin: 20px auto;
-    width: 100%;
+    width: 95%;
     line-height: 20px;
 
 }
@@ -159,6 +164,7 @@ button {
 
 .photos {
     display: flex;
+    height: fit-content;
     line-height: 0;
     margin: 10px auto;
 }
@@ -199,13 +205,12 @@ button {
     justify-content: center;
     align-items: start;
 
-    width: 95%;
-    max-width: 600px;
-    height: 100%;
+    height: calc(100svh - 95px);
+    min-height: 100%;
 }
 
 .website a {
-    color: var(--dark-pink);
+    /* color: var(--dark-pink); */
     font-style: italic;
     font-size: 16px;
     font-weight: 300;
@@ -216,7 +221,7 @@ button {
 
 .browser {
     width: 100%;
-    border: 0.1px solid var(--dark-pink);
+    /* border: 0.1px solid var(--dark-pink); */
 }
 
 .window {
@@ -231,10 +236,10 @@ button {
 
     /* overscroll-behavior: none; */
 
-    border-top: 0.1px solid var(--dark-pink);
+    /* border-top: 0.1px solid var(--dark-pink); */
 }
 
-#intentionz {
+#intentionz .window {
     overflow-y: hidden;
 }
 
@@ -254,7 +259,98 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--light-pink);
+    /* background-color: var(--light-pink); */
+}
+
+/* div {
+    color: #dbddff;
+    color: #4e52a1;
+} */
+
+#wijslijf .window::-webkit-scrollbar-track
+{
+	border-radius: 8px;
+	background-color: #F5F5F5;
+}
+
+#wijslijf .window::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: hsl(61, 53%, 83%);
+}
+
+#wijslijf .window::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	background-color: #a2914e;
+}
+
+#wijslijf .bar {
+    background-color: hsl(61, 53%, 83%); 
+}
+
+#wijslijf .inputfield {
+    border: 0.5px solid hsl(48, 35%, 47%);
+}
+
+#wijslijf .window {
+    border-top: 0.5px solid #a2914e;
+}
+
+#wijslijf {
+    border: 0.5px solid hsl(48, 35%, 47%);
+}
+
+
+#quedesfritjes .window::-webkit-scrollbar-track
+{
+	border-radius: 8px;
+	background-color: hsl(237, 100%, 93%);
+}
+
+#quedesfritjes .window::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: hsl(237, 100%, 93%);
+}
+
+#quedesfritjes .window::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	background-color: #4e52a1;
+}
+
+#quedesfritjes .bar {
+    background-color: hsl(237, 100%, 93%); 
+}
+
+#quedesfritjes .inputfield {
+    border: 0.5px solid #4e52a1;
+}
+
+#quedesfritjes .window {
+    border-top: 0.5px solid #4e52a1;
+}
+
+#quedesfritjes {
+    border: 0.5px solid #4e52a1;
+}
+
+
+#intentionz .bar {
+    background-color: hsl(124, 54%, 75%); 
+}
+
+#intentionz .inputfield {
+    border: 0.5px solid #3b8140;
+}
+
+#intentionz .window {
+    border-top: 0.5px solid #3b8140;
+}
+
+#intentionz {
+    border: 0.5px solid #3b8140;
 }
 
 .arrows {
@@ -284,7 +380,7 @@ img {
     width: 75%;
 
     background-color: var(--background-white);
-    border: 0.5px solid var(--dark-pink);
+    /* border: 0.5px solid var(--dark-pink); */
 
     vertical-align: middle;
 
@@ -295,4 +391,37 @@ img {
 .inputfield p {
     padding-left: 4px;
     font-size: 6px;
+}
+
+@media screen and (min-width: 900px) {
+    .pagewrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        width: 100%;
+        margin: 0;
+    }
+
+    .website {
+        width: calc(95% / 3)
+    }
+
+    .kolom {
+        display: flex;
+        flex-direction: column;
+    
+        width: calc(100% / 3)  
+    }
+
+    .photos {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .photo {
+        width: 47.5%;
+    }
+
+
 }

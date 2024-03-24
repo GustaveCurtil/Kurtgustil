@@ -229,8 +229,6 @@ button {
     aspect-ratio: 1.79/1;
     background-color: rgb(88, 141, 141);
 
-    overflow-y: auto;
-
 
     line-height: 0;
 
@@ -295,6 +293,7 @@ img {
 
 #wijslijf .window {
     border-top: 0.5px solid #a2914e;
+    overflow-y:scroll;
 }
 
 #wijslijf {
@@ -305,7 +304,7 @@ img {
 #quedesfritjes .window::-webkit-scrollbar-track
 {
 	border-radius: 8px;
-	background-color: hsl(237, 100%, 93%);
+	background-color: #F5F5F5;
 }
 
 #quedesfritjes .window::-webkit-scrollbar
@@ -330,6 +329,7 @@ img {
 
 #quedesfritjes .window {
     border-top: 0.5px solid #4e52a1;
+    overflow-y:scroll;
 }
 
 #quedesfritjes {

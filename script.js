@@ -26,3 +26,5 @@ copyButtons.forEach(button => {
         alert("je hebt '" + button.id + "' gekopieerd")
     })
 });
+
+let bannerelements = document.querySelectorAll("footer p");

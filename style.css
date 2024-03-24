@@ -111,15 +111,17 @@ main {
 }
 
 
-footer {
-    width: 100%;
+footer {    
     height: 30px;
+    min-width: 100%;
+    width: max-content;
 
     background-color: var(--light-pink);
     border-top: 2px solid var(--dark-pink);
 
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -128,8 +130,9 @@ footer a {
 }
 
 footer p {
-    width: auto;
-    font-weight: 400;
+    width: max-content;
+    padding: 0 5%;
+    margin: 0;
 }
 
 /*/ / HUUR MIJ / /*/
@@ -390,7 +393,8 @@ img {
 
 .inputfield p {
     padding-left: 4px;
-    font-size: 6px;
+    font-size: 8px;
+    text-align: left;
 }
 
 @media screen and (min-width: 900px) {

@@ -11,6 +11,7 @@
     --dark-pink: #C65252;
     --light-pink: #ffdbdb;
     --background-white: #fcfcfc;
+    --matching-color: rgb(107, 113, 158);
 }
 
 
@@ -166,6 +167,11 @@ li {
     list-style-position: outside;
     margin-left: 5%;
     line-height: 20px;
+    /* list-style-type: '☆ '; */
+}
+
+.wave {
+    color: var(--matching-color);
 }
 
 button {
@@ -175,8 +181,19 @@ button {
     padding: 0 2px;
 }
 
+.cursief {
+    font-style: italic;
+    color: var(--matching-color);
+    /* text-decoration: dashed 1px var(--dark-pink) underline;
+    text-underline-offset: 3px; */
+}
+
 .bold {
     font-weight: 600;
+}
+
+.wavy {
+    text-decoration: underline wavy var(--matching-color) 1px;
 }
 
 .contact {

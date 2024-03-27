@@ -25,7 +25,7 @@ body {
     overflow-y: hidden;
 
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--dark-pink);
     background-color: var(--light-pink);
 }
@@ -42,6 +42,7 @@ h1 {
 
 a {
     color: var(--dark-pink);
+    text-decoration-thickness: 0.5px;
 }
 
 
@@ -138,7 +139,7 @@ footer p {
 /*/ / HUUR MIJ / /*/
 
 .pagewrapper {
-    width: 95%;
+    width: 100;
     min-height: calc(100%);
     margin: 0 auto;
     display: flex;
@@ -146,12 +147,26 @@ footer p {
 
 }
 
+.kolom {
+    padding: 0 2.5%;
+}
 
 p {
     margin: 20px auto;
-    width: 95%;
+    width: 100%;
     line-height: 20px;
 
+}
+
+.aanbod {
+    margin: 10px 0;
+}
+
+li {
+    list-style-position: outside;
+    margin-left: 5%;
+    line-height: 20px;
+    list-style-type: '★ ';
 }
 
 button {
@@ -164,6 +179,15 @@ button {
 .bold {
     font-weight: 600;
 }
+
+.contact {
+    border: 2px dotted var(--dark-pink);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .photos {
     display: flex;
@@ -412,10 +436,11 @@ img {
     }
 
     .kolom {
-        display: flex;
-        flex-direction: column;
     
-        width: calc(100% / 3)  
+        width: calc(100% / 3);
+
+        padding: 0 calc(2.5% / 3)
+
     }
 
     .photos {
@@ -424,7 +449,7 @@ img {
     }
 
     .photo {
-        width: 47.5%;
+        width: 50%;
     }
 
 

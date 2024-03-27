@@ -166,7 +166,7 @@ li {
     list-style-position: outside;
     margin-left: 5%;
     line-height: 20px;
-    list-style-type: '★ ';
+    list-style-type: '⋆ ';
 }
 
 button {
@@ -466,3 +466,9 @@ img {
 
 
 }
+
+@media screen and (orientation:landscape) {
+    .website {
+        width: 50%;
+    }
+ }

@@ -483,8 +483,9 @@ img {
 
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (max-width: 900px) and (orientation:landscape) {
     .website {
-        width: 50%;
+        width: 300px;
+        
     }
  }

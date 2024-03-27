@@ -222,6 +222,7 @@ button {
 }
 
 .website {
+    width: 95%;
     margin: 0 auto;
 
     text-align: center;
@@ -422,6 +423,17 @@ img {
 }
 
 @media screen and (min-width: 900px) {
+    body {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    p, li {
+        line-height: 30px;
+    }
+
+
+
     .pagewrapper {
         display: flex;
         flex-direction: row;

@@ -50,6 +50,9 @@ a {
     text-decoration-thickness: 0.5px;
 }
 
+a:hover {
+    text-decoration-style: wavy;
+ }
 
 /*/ / HEADER / /*/
 
@@ -89,6 +92,10 @@ nav {
 
 .tab:last-of-type {
     border-right: 0;
+}
+
+.tab:not(.current):hover {
+    font-weight: 600;
 }
 
 

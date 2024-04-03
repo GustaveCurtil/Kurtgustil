@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <script src="p5.min.js" defer></script>
+    <script src="fourier.js"></script>
     <meta name="description" content="Ik ontwerp en codeer websites">
     <meta name="google-site-verification" content="I6MnBHllSlL9prQlqOm5APtcGlAhReXKSC1K077QkC8" />
     <title>Kurtgustil - Web Design & Development</title>
@@ -13,55 +15,12 @@
     <header>
         <h1>KURT<span class="bold">GUST</span>IL</h1>
         <nav>
-            <div class="tab">HUUR MIJ</div>
             <div class="tab current">PORTFOLIO</div>
-            <!-- <div class="tab">MULTIMEDIA</div> -->
+            <div class="tab">HUUR MIJ</div>
+            <div class="tab">MULTIMEDIA</div>
         </nav>
     </header>
-    <main id="huur_mij">
-        <div class="pagewrapper">
-            <div class="text kolom">
-                <p>Ik ontwerp en codeer websites:</p>
-                <p class="aanbod">⚡ <span class="bold">Statische websites</span> (vaste inhoud)</p>
-                <ul>
-                    <li>Een online visitekaartje.</li>
-                    <li>Goed voor websites die weinig tot geen inhoudelijke updates nodig hebben.</li>
-                    <li><span class="cursief">Voorbeeld</span>: deze portfolio website.</li>
-                </ul>
-                <p class="aanbod">🤸🏽‍♂️ <span class="bold">Dynamische websites</span> (zelf aanpasbaar)</p>
-                <ul>
-                    <li>Om zelf de content te beheren.</li>
-                    <li>Projecten / werken / nieuwigheden delen.</li>
-                    <li>Met behulp van een bestaande of op maat gemaakte Content Manager System (CMS).</li>
-                    <li><span class="cursief">Voorbeelden</span>: architectuurwebsite, online kunstgalerij, website voor een praktijk met workshops, etc.</li>
-                </ul>
-                <p class="aanbod">🌈 <span class="bold">Web-platformen</span></p>
-                <ul>
-                    <li>Login-systeem / content toevoegen, aanpassen en verwijderen / interactiviteit tussen gebruikers / web-scraping / etc.</li>
-                    <li><span class="cursief">Voorbeelden</span>: cinema-platform, platform voor jouw boekenclub, eigen sociale media onder jouw vriendengroep, etc.</li>
-                </ul>
-            </div>
-            <div class="text kolom">
-                <p>Ik <span class="bold wavy wavy" title="ik gebruik hiervoor Figma, pen en papier!">ontwerp</span> websites op maat van jouw wensen en noden. Tijdens het <span class="bold wavy" title="voor statische websites is HTML, CSS en JavaScript voldoende, voor complexere websites maak ik gebruik van PHP met als framework Laravel">coderen</span> heb ik veel oog voor detail zodat de website op elk toestel, oud en nieuw, vlotjes functioneert. Ik hecht veel belang aan het uitzoeken hoe websites een <span class="bold wavy" title="zo zal ik o.a. sneller geneigd zijn  om een statische/niet-zelf-aanpasbare website aan te raden, aangezien deze niet bij elk bezoek verbinding moet zoeken met een server die op zijn beurt 24/7 draaiende moet blijven.">kleinere ecologische voetafdruk</span> kunnen hebben.  </p>
-                <p>Werk jij of jouw organisatie aan een project dat een positieve impact probeert teweeg te brengen en kan een website een meerwaarde bieden?</p>
-                <p>Neem gerust contact op en we denken samen na hoe ik jou kan helpen.</p>
-                <p class="contact">
-                <span>⋇⊶⊰ Gustave Curtil ⊱⊷⋇</span>
-                <span><a href="mailto:gustave.curtil@tutanota.com">gustave.curtil@tutanota.com</a> <button id="gustave.curtil@tutanota.com"><span class="bold">KOPIEER</span></button></span>
-                <a href="tel:+32477983300">04 77 98 33 00</a> <!-- <button id="+32477983300"><span class="bold">KOPIEER</span> --></button></p>
-            </div>
-            <div class="photos kolom">
-                <div class="photo">
-                    <div id="filter1"></div>
-                    <img src="gust.png" alt="">
-                </div>
-                <div class="photo">
-                    <div id="filter2"></div>
-                    <img src="gust.png" alt="">
-                </div>
-            </div>
-        </div>
-    </main>
+
     <main class="currentpage" id="websites" dir="ltr">
         <div class="pagewrapper">
             <div class="website">
@@ -171,12 +130,57 @@
             </div>
         </div>
     </main>
+
+    <main id="huur_mij">
+        <div class="pagewrapper">
+            <div class="text kolom">
+                <p>Ik ontwerp en codeer websites:</p>
+                <p class="aanbod">⚡ <span class="bold">Statische websites</span> (vaste inhoud)</p>
+                <ul>
+                    <li>Een online visitekaartje.</li>
+                    <li>Goed voor websites die weinig tot geen inhoudelijke updates nodig hebben.</li>
+                    <li><span class="cursief">Voorbeeld</span>: deze portfolio website.</li>
+                </ul>
+                <p class="aanbod">🤸🏽‍♂️ <span class="bold">Dynamische websites</span> (zelf aanpasbaar)</p>
+                <ul>
+                    <li>Om zelf de content te beheren.</li>
+                    <li>Projecten / werken / nieuwigheden delen.</li>
+                    <li>Met behulp van een bestaande of op maat gemaakte Content Manager System (CMS).</li>
+                    <li><span class="cursief">Voorbeelden</span>: architectuurwebsite, online kunstgalerij, website voor een praktijk met workshops, etc.</li>
+                </ul>
+                <p class="aanbod">🌈 <span class="bold">Web-platformen</span></p>
+                <ul>
+                    <li>Login-systeem / content toevoegen, aanpassen en verwijderen / interactiviteit tussen gebruikers / web-scraping / etc.</li>
+                    <li><span class="cursief">Voorbeelden</span>: cinema-platform, platform voor jouw boekenclub, eigen sociale media onder jouw vriendengroep, etc.</li>
+                </ul>
+            </div>
+            <div class="text kolom">
+                <p>Ik <span class="bold wavy wavy" title="ik gebruik hiervoor Figma, pen en papier!">ontwerp</span> websites op maat van jouw wensen en noden. Tijdens het <span class="bold wavy" title="voor statische websites is HTML, CSS en JavaScript voldoende, voor complexere websites maak ik gebruik van PHP met als framework Laravel">coderen</span> heb ik veel oog voor detail zodat de website op elk toestel, oud en nieuw, vlotjes functioneert. Ik hecht veel belang aan het uitzoeken hoe websites een <span class="bold wavy" title="zo zal ik o.a. sneller geneigd zijn  om een statische/niet-zelf-aanpasbare website aan te raden, aangezien deze niet bij elk bezoek verbinding moet zoeken met een server die op zijn beurt 24/7 draaiende moet blijven.">kleinere ecologische voetafdruk</span> kunnen hebben.  </p>
+                <p>Werk jij of jouw organisatie aan een project dat een positieve impact probeert teweeg te brengen en kan een website een meerwaarde bieden?</p>
+                <p>Neem gerust contact op en we denken samen na hoe ik jou kan helpen.</p>
+                <p class="contact">
+                <span>⋇⊶⊰ Gustave Curtil ⊱⊷⋇</span>
+                <span><a href="mailto:gustave.curtil@tutanota.com">gustave.curtil@tutanota.com</a> <button id="gustave.curtil@tutanota.com"><span class="bold">KOPIEER</span></button></span>
+                <a href="tel:+32477983300">04 77 98 33 00</a> <!-- <button id="+32477983300"><span class="bold">KOPIEER</span> --></button></p>
+            </div>
+            <div class="photos kolom">
+                <div class="photo">
+                    <div id="filter1"></div>
+                    <img src="gust.png" alt="">
+                </div>
+                <div class="photo">
+                    <div id="filter2"></div>
+                    <img src="gust.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
     
-    <!-- <main id="multimedia">
+    <main id="multimedia">
         <div class="pagewrapper">
             <div class="content">
-                <a href="https://mastermindzzz.netlify.app/">Mastermindzzz</a><br>
-                <a href="https://50albums.netlify.app/">top 50 albums</a><br><br>
+                <a href="https://mastermindzzz.netlify.app/" target="_blank">Mastermindzzz</a><br>
+                <a href="https://50albums.netlify.app/" target="_blank">top 50 albums</a><br><br>
                 <audio controls>
                     <source src="/media/holiday-impressions.mp3" type="audio/mp3">
                     De browser kan dit mp3-bestand niet lezen...
@@ -185,17 +189,19 @@
                     <source src="/media/Zeevruchten.mp3" type="audio/mp3">
                     De browser kan dit mp3-bestand niet lezen...
                 </audio>
-                <video width="320" height="240" controls>
+                <video controls>
                     <source src="/media/bib.mp4" type="video/mp4">
                 </video>
-                <video width="320" height="240" controls>
+                <video controls>
                     <source src="/media/metro.mp4" type="video/mp4">
                 </video>
             </div>
             <div id="sketch-holder">
+
             </div>
         </div>
-    </main> -->
+    </main>
+
     <footer>
         <!-- <p>📧 <a href="mailto:gustave.curtil@tutanota.com"><span class="bold">Stuur een mail</span></a></p> -->
         <p>🌳 Deze website verbruikt <a href="https://www.websitecarbon.com/website/kurtgustil-netlify-app/" target="_blank">0.01g CO2 / view</a></p>

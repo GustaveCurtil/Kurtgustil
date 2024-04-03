@@ -72,7 +72,7 @@ nav {
 
 
 .tab {
-    width: calc(100% / 2);
+    width: calc(100% / 3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -447,9 +447,112 @@ img {
 }
 
 /*/ / MULTIMEDIA / /*/
+#multimedia .pagewrapper {
+    align-items: center;
+}
+
 #sketch-holder {
     line-height: 0;
 }
+
+
+.content {
+    width : 95%;
+}
+
+#multimedia .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+audio {
+    width: 100%;
+    color: var(--light-pink);
+}
+
+video {
+    width:100%;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: black;
+    border-radius: 0px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    height: 14px;
+    width: 14px;
+    border-radius: 32px;
+    background: var(--light-pink);
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: black;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: black;
+    border-radius: 0px;
+  }
+  input[type=range]::-moz-range-thumb {
+    height: 14px;
+    width: 14px;
+    border-radius: 32px;
+    background: #198CFF;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: black;
+    border-radius: 0px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: black;
+    border-radius: 0px;
+  }
+  input[type=range]::-ms-thumb {
+    height: 14px;
+    width: 14px;
+    border-radius: 32px;
+    background: #198CFF;
+    cursor: pointer;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: black;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: black;
+  }
+
 
 @media screen and (min-width: 900px) {
     body {
@@ -475,6 +578,21 @@ img {
 
         width: 100%;
         margin: 0;
+    }
+
+    #multimedia {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #multimedia .pagewrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #multimedia .content {
+        width: calc(95% / 3);
+
     }
 
     .website {

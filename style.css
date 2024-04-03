@@ -157,6 +157,26 @@ footer p {
     display: flex;
     flex-direction: column;
 
+    overflow-x: hidden;
+
+}
+
+#multimedia::-webkit-scrollbar-track
+{
+	border-radius: 8px;
+	background-color: var(--background-white);
+}
+
+#multimedia::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: var(--background-white);
+}
+
+#multimedia::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	background-color: var(--light-pink);
 }
 
 .kolom {

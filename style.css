@@ -481,15 +481,23 @@ img {
 }
 
 #multimedia .content {
+    height: calc(100svh - 310px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 audio {
     width: 100%;
     color: var(--light-pink);
 }
+
+audio::-webkit-media-controls-panel {
+    background-color: var(--light-pink);
+    color: var(--dark-pink);
+}
+
 
 video {
     width:100%;

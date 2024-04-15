@@ -27,4 +27,3 @@ copyButtons.forEach(button => {
     })
 });
 
-let bannerelements = document.querySelectorAll("footer p");

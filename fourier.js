@@ -16,6 +16,7 @@ function setup() {
 }
 
 function draw() {
+    frameRate(20);
     lang = 300;
     kort = 200;
 
@@ -50,5 +51,5 @@ function draw() {
     endShape()
     line(x-(lang/3), y, 0, wave[0])
     
-    angle += 0.025
+    angle += 0.05
 }

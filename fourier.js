@@ -1,3 +1,5 @@
+
+
 let angle = 0;
 let wave = []
 
@@ -16,7 +18,7 @@ function setup() {
 }
 
 function draw() {
-    frameRate(20);
+    frameRate(30);
     lang = 300;
     kort = 200;
 

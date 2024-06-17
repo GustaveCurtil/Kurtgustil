@@ -1,8 +1,6 @@
 let tabs = document.querySelectorAll(".tab");
 let pages = document.querySelectorAll("main");
 
-
-
 for (let i = 0; i < tabs.length; i++) {
     const tab = tabs[i];
     tab.addEventListener('click', ()=> {

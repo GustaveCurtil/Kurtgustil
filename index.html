@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script async src="https://cdn.jsdelivr.net/npm/p5@1.9.2/lib/p5.js" defer></script>
-    <script src="script.js" defer></script>
-    <script src="fourier.js"></script>
-    <meta name="description" content="Ik ontwerp en codeer websites">
-    <meta name="google-site-verification" content="I6MnBHllSlL9prQlqOm5APtcGlAhReXKSC1K077QkC8" />
+    <meta name="description" content="Ik ontwerp en codeer websites. Bekijk mijn portfolio en neem contact op voor meer informatie.">
+    <meta name="google-site-verification" content="I6MnBHllSlL9prQlqOm5APtcGlAhReXKSC1K077QkC8">
+    <meta property="og:title" content="Kurtgustil - Web Design & Development">
+    <meta property="og:description" content="Ik ontwerp en codeer websites. Bekijk mijn portfolio en neem contact op voor meer informatie.">
+    <meta property="og:image" content="path/to/your-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta name="twitter:card" content="summary_large_image">
     <title>Kurtgustil - Web Design & Development</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>KURT<span class="bold">GUST</span>IL</h1>
         <nav>
-            <div class="tab current">PORTFOLIO</div>
-            <div class="tab">HUUR MIJ</div>
-            <div class="tab">MULTIMEDIA</div>
+            <a class="tab current">WEBSITES</a>
+            <a class="tab">HUUR MIJ</a>
+            <a class="tab">VIDEOS</a>
         </nav>
     </header>
 
-    <main class="currentpage" id="websites" dir="ltr">
-        <div class="pagewrapper">
-            <div class="website">
+    <main id="portfolio" class="currentpage">
+        <section class="pagewrapper">
+            <article class="website">
                 <a href="https://www.wijslijf.com/" target="_blank">www.wijslijf.com</a>
                 <div class="browser" id="wijslijf">
                     <div class="bar">
@@ -35,7 +38,7 @@
                             <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="-21" y="-5" width="304" height="14" stroke="#a2914e"/>
                                 <path d="M6.17678 2.17678C6.27441 2.07915 6.27441 1.92085 6.17678 1.82322L4.58579 0.232233C4.48816 0.134602 4.32986 0.134602 4.23223 0.232233C4.1346 0.329864 4.1346 0.488155 4.23223 0.585786L5.64645 2L4.23223 3.41421C4.1346 3.51184 4.1346 3.67014 4.23223 3.76777C4.32986 3.8654 4.48816 3.8654 4.58579 3.76777L6.17678 2.17678ZM0 2.25H6V1.75H0V2.25Z" fill="#a2914e"/>
-                            </svg>       
+                            </svg> 
                         </div>
                         <div class="inputfield">
                             <p>www.wijslijf.com</p>
@@ -50,15 +53,14 @@
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="4" cy="4" r="3.75" stroke="#a2914e" stroke-width="0.5"/>
                             </svg>
-                                
                         </div>
                     </div>
                     <div class="window">
-                        <img src="websites/wijslijf.webp" alt="">
+                        <img src="websites/wijslijf.webp" alt="Wijslijf website screenshot">
                     </div>
                 </div>
-            </div>
-            <div class="website">
+            </article>
+            <article class="website">
                 <a href="https://www.quedesfritjes.be/" target="_blank">www.quedesfritjes.be</a>
                 <div class="browser" id="quedesfritjes">
                     <div class="bar">
@@ -70,7 +72,7 @@
                             <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect x="-21" y="-5" width="304" height="14" stroke="#4e52a1"/>
                                 <path d="M6.17678 2.17678C6.27441 2.07915 6.27441 1.92085 6.17678 1.82322L4.58579 0.232233C4.48816 0.134602 4.32986 0.134602 4.23223 0.232233C4.1346 0.329864 4.1346 0.488155 4.23223 0.585786L5.64645 2L4.23223 3.41421C4.1346 3.51184 4.1346 3.67014 4.23223 3.76777C4.32986 3.8654 4.48816 3.8654 4.58579 3.76777L6.17678 2.17678ZM0 2.25H6V1.75H0V2.25Z" fill="#4e52a1"/>
-                            </svg>       
+                            </svg> 
                         </div>
                         <div class="inputfield">
                             <p>www.quedesfritjes.be</p>
@@ -85,116 +87,118 @@
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="4" cy="4" r="3.75" stroke="#4e52a1" stroke-width="0.5"/>
                             </svg>
-                                
                         </div>
                     </div>
                     <div class="window">
-                        <img src="websites/quedesfritjes.webp" alt="">
+                        <img src="websites/quedesfritjes.webp" alt="Quedesfritjes website screenshot">
                     </div>
                 </div>
-            </div>
-            <div class="website">
+            </article>
+            <article class="website">
                 <a href="https://intentionz.be/priziX6vOuu" target="_blank">www.intentionz.be</a>
                 <div class="browser" id="intentionz">
                     <div class="bar">
                         <div class="arrows">
                             <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="-5" y="-5" width="304" height="14" stroke="#3b8140"/>
-                                <path d="M0.823223 1.82312C0.725592 1.92075 0.725592 2.07904 0.823223 2.17668L2.41421 3.76769C2.51184 3.86532 2.67014 3.86533 2.76777 3.7677C2.8654 3.67007 2.8654 3.51178 2.76777 3.41414L1.35355 1.99991L2.76777 0.585717C2.8654 0.488087 2.8654 0.329796 2.76777 0.232163C2.67014 0.134531 2.51184 0.134528 2.41421 0.232158L0.823223 1.82312ZM7 1.75L1 1.7499L1 2.2499L7 2.25L7 1.75Z" fill="#3b8140"/>
+                                <rect x="-5" y="-5" width="304" height="14" stroke="#a14e4e"/>
+                                <path d="M0.823223 1.82312C0.725592 1.92075 0.725592 2.07904 0.823223 2.17668L2.41421 3.76769C2.51184 3.86532 2.67014 3.86533 2.76777 3.7677C2.8654 3.67007 2.8654 3.51178 2.76777 3.41414L1.35355 1.99991L2.76777 0.585717C2.8654 0.488087 2.8654 0.329796 2.76777 0.232163C2.67014 0.134531 2.51184 0.134528 2.41421 0.232158L0.823223 1.82312ZM7 1.75L1 1.7499L1 2.2499L7 2.25L7 1.75Z" fill="#a14e4e"/>
                             </svg>
                             <svg width="7" height="4" viewBox="0 0 7 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect x="-21" y="-5" width="304" height="14" stroke="#3b8140"/>
-                                <path d="M6.17678 2.17678C6.27441 2.07915 6.27441 1.92085 6.17678 1.82322L4.58579 0.232233C4.48816 0.134602 4.32986 0.134602 4.23223 0.232233C4.1346 0.329864 4.1346 0.488155 4.23223 0.585786L5.64645 2L4.23223 3.41421C4.1346 3.51184 4.1346 3.67014 4.23223 3.76777C4.32986 3.8654 4.48816 3.8654 4.58579 3.76777L6.17678 2.17678ZM0 2.25H6V1.75H0V2.25Z" fill="#3b8140"/>
-                            </svg>       
+                                <rect x="-21" y="-5" width="304" height="14" stroke="#a14e4e"/>
+                                <path d="M6.17678 2.17678C6.27441 2.07915 6.27441 1.92085 6.17678 1.82322L4.58579 0.232233C4.48816 0.134602 4.32986 0.134602 4.23223 0.232233C4.1346 0.329864 4.1346 0.488155 4.23223 0.585786L5.64645 2L4.23223 3.41421C4.1346 3.51184 4.1346 3.67014 4.23223 3.76777C4.32986 3.8654 4.48816 3.8654 4.58579 3.76777L6.17678 2.17678ZM0 2.25H6V1.75H0V2.25Z" fill="#a14e4e"/>
+                            </svg> 
                         </div>
                         <div class="inputfield">
                             <p>www.intentionz.be</p>
                         </div>
                         <div class="commandos">
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="3.75" stroke="#3b8140" stroke-width="0.5"/>
+                                <circle cx="4" cy="4" r="3.75" stroke="#a14e4e" stroke-width="0.5"/>
                             </svg>
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="3.75" stroke="#3b8140" stroke-width="0.5"/>
+                                <circle cx="4" cy="4" r="3.75" stroke="#a14e4e" stroke-width="0.5"/>
                             </svg>
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="4" cy="4" r="3.75" stroke="#3b8140" stroke-width="0.5"/>
+                                <circle cx="4" cy="4" r="3.75" stroke="#a14e4e" stroke-width="0.5"/>
                             </svg>
-                                
                         </div>
                     </div>
                     <div class="window">
-                        <img src="websites/intentionz.webp" alt="">
+                        <img src="websites/intentionz.webp" alt="Intentionz website screenshot">
                     </div>
                 </div>
-            </div>
-        </div>
+            </article>
+        </section>
     </main>
 
     <main id="huur_mij">
-        <div class="pagewrapper">
-            <div class="text kolom">
+        <section class="pagewrapper">
+            <div class="kolom">
                 <p>Ik ontwerp en codeer websites:</p>
-                <p class="aanbod">⚡ <span class="bold">Statische websites</span> (vaste inhoud)</p>
+                <h3 class="aanbod">⚡ <span class="bold">Statische websites</span> (vaste inhoud)</h3>
                 <ul>
                     <li>Een online visitekaartje.</li>
                     <li>Goed voor websites die weinig tot geen inhoudelijke updates nodig hebben.</li>
                     <li><span class="cursief">Voorbeeld</span>: deze portfolio website.</li>
                 </ul>
-                <p class="aanbod">🤸🏽‍♂️ <span class="bold">Dynamische websites</span> (zelf aanpasbaar)</p>
+                <h3 class="aanbod">🤸🏽‍♂️ <span class="bold">Dynamische websites</span> (zelf aanpasbaar)</h3>
                 <ul>
                     <li>Om zelf de content te beheren.</li>
                     <li>Projecten / werken / nieuwigheden delen.</li>
                     <li>Met behulp van een bestaande of op maat gemaakte Content Manager System (CMS).</li>
                     <li><span class="cursief">Voorbeelden</span>: architectuurwebsite, online kunstgalerij, website voor een praktijk met workshops, etc.</li>
                 </ul>
-                <p class="aanbod">🌈 <span class="bold">Web-platformen</span></p>
+                <h3 class="aanbod">🌈 <span class="bold">Web-platformen</span></h3>
                 <ul>
                     <li>Login-systeem / content toevoegen, aanpassen en verwijderen / interactiviteit tussen gebruikers / web-scraping / etc.</li>
                     <li><span class="cursief">Voorbeelden</span>: cinema-platform, platform voor jouw boekenclub, eigen sociale media onder jouw vriendengroep, etc.</li>
                 </ul>
             </div>
-            <div class="text kolom">
-                <p>Ik <span class="bold wavy wavy" title="ik gebruik hiervoor Figma, pen en papier!">ontwerp</span> websites op maat van jouw wensen en noden. Tijdens het <span class="bold wavy" title="voor statische websites is HTML, CSS en JavaScript voldoende, voor complexere websites maak ik gebruik van PHP met als framework Laravel">coderen</span> heb ik veel oog voor detail zodat de website op elk toestel, oud en nieuw, vlotjes functioneert. Ik hecht veel belang aan het uitzoeken hoe websites een <span class="bold wavy" title="zo zal ik o.a. sneller geneigd zijn  om een statische/niet-zelf-aanpasbare website aan te raden, aangezien deze niet bij elk bezoek verbinding moet zoeken met een server die op zijn beurt 24/7 draaiende moet blijven.">kleinere ecologische voetafdruk</span> kunnen hebben.  </p>
+            <div class="kolom">
+                <p>Ik <span class="bold wavy wavy" title="ik gebruik hiervoor Figma, pen en papier!">ontwerp</span> websites op maat van jouw wensen en noden. Tijdens het <span class="bold wavy" title="voor statische websites is HTML, CSS en JavaScript voldoende, voor complexere websites maak ik gebruik van PHP met als framework Laravel">coderen</span> heb ik veel oog voor detail zodat de website op elk toestel, oud en nieuw, vlotjes functioneert. Ik hecht veel belang aan het uitzoeken hoe websites een <span class="bold wavy" title="zo zal ik o.a. sneller geneigd zijn  om een statische/niet-zelf-aanpasbare website aan te raden, aangezien deze niet bij elk bezoek verbinding moet zoeken met een server die op zijn beurt 24/7 draaiende moet blijven.">kleinere ecologische voetafdruk</span> kunnen hebben.</p>
                 <p>Werk jij of jouw organisatie aan een project dat een positieve impact probeert teweeg te brengen en kan een website een meerwaarde bieden?</p>
                 <p>Neem gerust contact op en we denken samen na hoe ik jou kan helpen.</p>
                 <p class="contact">
-                <span>⋇⊶⊰ Gustave Curtil ⊱⊷⋇</span>
-                <span><a href="mailto:gustave.curtil@tutanota.com">gustave.curtil@tutanota.com</a> <button id="gustave.curtil@tutanota.com"><span class="bold">KOPIEER</span></button></span>
-                <a href="tel:+32477983300">04 77 98 33 00</a> <!-- <button id="+32477983300"><span class="bold">KOPIEER</span> --></button></p>
+                    <span>⋇⊶⊰ Gustave Curtil ⊱⊷⋇</span>
+                    <span><a href="mailto:gustave.curtil@tutanota.com">gustave.curtil@tutanota.com</a> <button id="copy-email"><span class="bold">KOPIEER</span></button></span>
+                    <a href="tel:+32477983300">04 77 98 33 00</a> <!-- <button id="copy-phone"><span class="bold">KOPIEER</span> --></button>
+                </p>
             </div>
             <div class="photos kolom">
                 <div class="photo">
                     <div id="filter1"></div>
-                    <img src="gust.png" alt="">
+                    <img src="gust.png" alt="Gustave Curtil photo 1">
                 </div>
                 <div class="photo">
                     <div id="filter2"></div>
-                    <img src="gust.png" alt="">
+                    <img src="gust.png" alt="Gustave Curtil photo 2">
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     
     <main id="multimedia">
-        <div class="pagewrapper">
-            <div class="content">
-                <a href="https://mastermindzzz.netlify.app/" target="_blank">Mastermindzzz</a>
-                <a href="https://50albums.netlify.app/" target="_blank">top 50 albums</a>
+        <section class="pagewrapper">
+            <div class="text kolom">
+                <div class="malem">
+                    <a href="https://www.youtube.com/watch?v=F0fZKUiKdK4&t=1s">Opbouw Buurthuis Malem</a>
+                    <p>(deze video is kan niet geïntegreerd worden via html)</p>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RUZGTefkP58?si=wUHqIX5uz6uDHXMd"></iframe>
             </div>
-            <div id="sketch-holder">
-
+            <div class="text kolom">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/elPF9ZnHMio?si=J3eGaPb2YU_2HgCJ"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o8vEn76EZS4?si=oNmicaTdnFXWyhkG"></iframe>
             </div>
-        </div>
+            <div class="text kolom">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yaR0bkB596Q?si=cayeWH10VeOzEwAO"></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Bulh4xFl7s0?si=2IdKonRc-rNGHMw5"></iframe>
+            </div>
+        </section>
     </main>
-
+<!-- 
     <footer>
-        <!-- <p>📧 <a href="mailto:gustave.curtil@tutanota.com"><span class="bold">Stuur een mail</span></a></p> -->
         <p>🌳 Deze website verbruikt <a href="https://www.websitecarbon.com/website/kurtgustil-netlify-app/" target="_blank">0.01g CO2 / view</a></p>
-        <!-- <p>💶 Dope en goedkoop!</p>
-        <p>📧 <a href="mailto:gustave.curtil@tutanota.com"><span class="bold">Stuur een mail</span></a></p>
-        <p>🌳 Deze website verbruikt 0.08g CO2 / view </p>
-        <p>💶 Dope en goedkoop!</p>
     </footer> -->
 </body>
 </html>

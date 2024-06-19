@@ -41,8 +41,17 @@ h1 {
 
     font-weight: 400;
 
+    width:max-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: ;
+
     text-align: center;
     background-color: var(--light-pink); 
+
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
 }
 
 a {

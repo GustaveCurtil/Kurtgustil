@@ -15,7 +15,7 @@ for (let i = 0; i < tabs.length; i++) {
     })
 }
 
-let copyButtons = document.querySelectorAll(".text button");
+let copyButtons = document.querySelectorAll(".contact button");
 
 copyButtons.forEach(button => {
     button.addEventListener('click', () => {
